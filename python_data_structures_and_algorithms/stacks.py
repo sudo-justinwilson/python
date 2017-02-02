@@ -73,8 +73,6 @@ class ArrayStack:
 def reverse_file(filename):
     """
     Reverse the contents of a file's text, line by line.
-
-    From p. 235
     """
     S = ArrayStack()
     original = open(filename)
