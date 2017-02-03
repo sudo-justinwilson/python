@@ -66,8 +66,6 @@ def reverse_file(filename):
         output.write(S.pop() + '\n')
     output.close()
 
-def is_matched(expr):
-
 if __name__ == '__main__':
     import random
     a = ArrayStack()
