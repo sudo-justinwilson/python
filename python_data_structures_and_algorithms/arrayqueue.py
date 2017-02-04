@@ -74,18 +74,31 @@ if __name__ == '__main__':
     aq = ArrayQueue()
     print('is aq empty?     ', aq.is_empty())
     print('the len of aq is:    ', len(aq))
+    print('the length of the underlying list (self._data) is:   ', len(aq._data))
     l = [
     'first',
     'second',
     'third'
+    'fourth',
+    'fifth',
+    'sixth',
+    'seventh',
+    'eighth',
+    'ninth',
+    'tenth',
+    'eleventh',
+    'twelveth',
+    'thirteenth',
     ]
     for element in l:
         print('now putting ', element, ' in queue')
         aq.enqueue(element)
         print('the len of aq is:    ', len(aq))
+        print('the length of the underlying list (self._data) is:   ', len(aq._data))
     print('the first element of aq is: ', aq.first())
     print('is aq empty?     ', aq.is_empty())
     while len(aq) != 0:
         print('dequeuing:   ', aq.dequeue())
         print('the len of aq is:    ', len(aq))
+        print('the length of the underlying list (self._data) is:   ', len(aq._data))
 
