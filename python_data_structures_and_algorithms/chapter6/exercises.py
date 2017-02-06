@@ -27,3 +27,8 @@ R-6.5 Implement a function that reverses a list of elements by pushing them onto
 a stack in one order, and writing them back to the list in reversed order.
 
 	A)
+	def revers(obj):
+        l = []
+        for item in range(len(obj)):
+            l.append(obj.pop())
+        return l
