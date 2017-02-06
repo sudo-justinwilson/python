@@ -1,3 +1,3 @@
 # Exercises from python data structures and algorithms book
 
-Up to p.236
+Up to at least p. 282, but have to merge in the older files from tmp branch

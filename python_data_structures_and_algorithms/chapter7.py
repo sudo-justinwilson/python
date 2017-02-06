@@ -163,7 +163,7 @@ class CircularQueue:
             self._element = element
             self._next = next
     
-    def __iniit__(self):
+    def __init__(self):
         """
         Create an empty queue.
         """
@@ -236,13 +236,13 @@ if __name__ == '__main__':
     
     first = {'name':'BOS'}
     airports.enqueue(first)
-    print len(airports)
-    print airports.first()['name'] 
+    print(len(airports))
+    print(airports.first()['name'])
     # next
     second = {'name':'ATL'}
     airports.enqueue(second)
-    print len(airports)
-    print airports.first()['name'] 
+    print(len(airports))
+    print(airports.first()['name'])
     # next
     third = {'name':'MSP'}
     airports.enqueue(third)
