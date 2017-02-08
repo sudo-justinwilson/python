@@ -49,7 +49,8 @@ The procedure for adding a node after tail is:
     2. Reassign the linked list's _tail_ attribute, and the last node's _next_ element, so that it points to the new _tail_ node.
 
 __Removing the first element of a singly linked list:__
+Removing the head element is like adding an element, but in reverse. 
     1. Reassign linked list's _head_ element, so that it points to the next element (head.next)
     2. Remove references to the old head so that it is garbage collected.
 
-p. 261
+With a singly linked list, there is no efficient way to remove the _tail_ node, as we need to reassign the _next_ pointer of the element before tail (second last). This is because singly linked lists only maintain a "_next_" attribute, but not "previous", making it "one-way", and hence the name.  
