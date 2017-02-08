@@ -32,3 +32,18 @@ a stack in one order, and writing them back to the list in reversed order.
         for item in range(len(obj)):
             l.append(obj.pop())
         return l
+
+R-6.6 Give a precise and complete definition of the concept of matching for
+grouping symbols in an arithmetic expression. Your definition may be
+recursive.
+
+	A)
+	I do not understand the question??
+
+R-6.7 What values are returned during the following sequence of queue opera-
+tions, if executed on an initially empty queue? enqueue(5), enqueue(3),
+dequeue(), enqueue(2), enqueue(8), dequeue(), dequeue(), enqueue(9),
+enqueue(1), dequeue(), enqueue(7), enqueue(6), dequeue(), dequeue(),
+enqueue(4), dequeue(), dequeue().
+            
+	A) 
