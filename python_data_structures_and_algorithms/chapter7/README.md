@@ -71,13 +71,13 @@ A singly linked list member is called a"__node_". We can represent a node with a
 So the only attributes we define are:
 
 1. element
-  Points to the actual object
+.Points to the actual object
 2. next
-  Points to the node in the next position
-3. head
+  .Points to the node in the next position
+3. head\n
   points to the first element
 4. tail
-  points to the last element
+-  points to the last element
 
 #### Linked List Methods
 
