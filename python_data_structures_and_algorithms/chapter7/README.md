@@ -54,3 +54,14 @@ Removing the head element is like adding an element, but in reverse.
     2. Remove references to the old head so that it is garbage collected.
 
 With a singly linked list, there is no efficient way to remove the _tail_ node, as we need to reassign the _next_ pointer of the element before tail (second last). This is because singly linked lists only maintain a "_next_" attribute, but not "previous", making it "one-way", and hence the name.  
+
+### Singly linked list implementation:
+A singly linked list member is called a"__node_". We can represent a node with a non-public class, that is nested within the main linked list class definition:
+
+    ```
+    class _Node:
+        __slots__ = '_element', '_next'     # slots allow efficient memory use
+        def __init__(self, next):
+            self._element = element
+          self._next = next
+    ```
