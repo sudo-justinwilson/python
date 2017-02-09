@@ -58,10 +58,10 @@ With a singly linked list, there is no efficient way to remove the _tail_ node, 
 ### Singly linked list implementation:
 A singly linked list member is called a"__node_". We can represent a node with a non-public class, that is nested within the main linked list class definition:
 
-    ```
+```
     class _Node:
         __slots__ = '_element', '_next'     # slots allow efficient memory use
         def __init__(self, next):
             self._element = element
           self._next = next
-    ```
+```
