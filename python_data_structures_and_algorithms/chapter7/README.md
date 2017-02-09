@@ -77,7 +77,7 @@ So the only attributes we define are:
 3. head\n
   points to the first element
 4. tail
--  points to the last element
+    * points to the last element
 
 #### Linked List Methods
 
