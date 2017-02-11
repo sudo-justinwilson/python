@@ -16,6 +16,8 @@ Stacks are a simple data type, which are ubiquitous throughout computers. They a
 The adapter pattern is when we take an existing class, and implement to suit our needs, with a slighlty different interface and methods.
 An example of an adapter pattern is taking the Python "List" class, hiding it behind our code, and presenting new methods so that it behaves as a Stack.
 
+basically, we use a list internally for storage and present the user with us stack interface.
+
 ## Implementing an ArrayStack class, using a Python list as the backend storage:
 In this code example, we define a class with a "Stack" interface, but behind the scenes, we are really using a Python list. As mentioned above, this is an example of an "Adapter Pattern", and it is a classic example of re-using code with OOP.
 We just have to provide the methods for a Stack interface:

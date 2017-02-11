@@ -94,7 +94,7 @@ The methods that we define depend on how if we want to represent a LIFO, FIFO, e
 
 As Stack operations (push, pop) are only performed at the top (_beginning_), there is no need for a _tail_ reference.
 
-For a Queue, we need the ability to perform operations at the front (dequeue) and back (enqueue), so we define attributes to store their respective position.
+For a Queue, we need the ability to perform operations at the front (deque) and back (enqueue), so we define attributes to store their respective position.
 
 Common methods include:
 
@@ -168,11 +168,12 @@ To remove an element, we do the reverse of adding:
 1. the nodes that are before and after are set to point at each other, bypassing the redundant node.
 2. The redundant Node is set to point at None.
 
-So in summary, a doubly linked list is differentiated by:
+So in summary, a doubly linked list is differentiated singly linked list by:
 
     1. the Node's extra attribute: __prev__
     2. the head and tail sentinels
     3. the ability to insert elements between existing Nodes
+    4. the ability to delete arbitrary elements.
 
 We can define a doubly-linked base ADT that has the basic methods for a doubly-linked list to function.
 Sub-classes can inherit from this ADT and provide the user with an interface that suits their needs, whether they require a stack, queue, dequeue, etc..
