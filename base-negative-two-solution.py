@@ -37,3 +37,24 @@ sum([(j - j*2) for j in [A[i] * ((-2) ** i) for i in range(len(A))]])
 
 
  # TODO: I have to work out a way to convert the negative value into base -2??   
+    To build up a base -2 table:
+        [1*((-2)**i) for i in range(1,17)]
+
+# from wikipedia:
+def negaternary(i):
+    digits = []
+    if not i:
+        digits = ['0']
+    else:
+        while i != 0:
+            i, remainder = divmod(i, -2)
+            if remainder < 0:
+                i, remainder = i + 1, remainder + 2
+            digits.append(str(remainder))
+    return ''.join(digits[::-1])
+
+if __name__ == '__main__':
+    x = 9
+    xx = negaternary(x)
+    print('here is the result:\t', xx)
+
